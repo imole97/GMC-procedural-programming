@@ -1,0 +1,20 @@
+ALGORITHM dot_product
+
+FUNCTION dot_product(arr1,arr2) : INTEGER
+VAR
+    arr1,arr2 : ARRAY_OF INTEGER[];
+    i : INTEGER;
+    result: INTEGER;
+BEGIN
+    FOR i FROM 0 TO i<arr1.length DO
+        FOR i FROM 0 TO i<arr2.length DO
+            result += arr1[i]*arr2[i]
+        END_FOR
+    END_FOR
+    IF (result === 0) THEN
+        return('the two arrays are orthagonal, and the dot product is : '+ result)
+    ELSE
+        return('the two arrays are not orthagonal, and the dot product is : '+ result)
+    END_IF
+    RETURN result ;
+END
